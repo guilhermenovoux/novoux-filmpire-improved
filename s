@@ -1,0 +1,41 @@
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=openssl
+file:C:/Program Files/Git/etc/gitconfig	http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager-core
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/guilh/.gitconfig	core.editor="C:\Users\guilh\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+file:C:/Users/guilh/.gitconfig	core.excludesfile=~/.gitignore_global
+file:C:/Users/guilh/.gitconfig	user.name=Guilherme Novo
+file:C:/Users/guilh/.gitconfig	user.email=guilherme.novo@novoux.com
+file:C:/Users/guilh/.gitconfig	alias.ci=commit
+file:C:/Users/guilh/.gitconfig	alias.co=checkout
+file:C:/Users/guilh/.gitconfig	alias.cm=checkout master
+file:C:/Users/guilh/.gitconfig	alias.cb=checkout -b
+file:C:/Users/guilh/.gitconfig	alias.st=status -sb
+file:C:/Users/guilh/.gitconfig	alias.sf=show --name-only
+file:C:/Users/guilh/.gitconfig	alias.lg=log --pretty=format:'%Cred%h%Creset %C(bold)%cr%Creset %Cgreen<%an>%Creset %s' --max-count=30
+file:C:/Users/guilh/.gitconfig	alias.incoming=!(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' ..@{u})
+file:C:/Users/guilh/.gitconfig	alias.outgoing=!(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' @{u}..)
+file:C:/Users/guilh/.gitconfig	alias.unstage=reset HEAD --
+file:C:/Users/guilh/.gitconfig	alias.undo=checkout --
+file:C:/Users/guilh/.gitconfig	alias.rollback=reset --soft HEAD~1
+file:C:/Users/guilh/.gitconfig	credential.helper=wincred
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/guilhermenovoux/filmpire-improved.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.main.remote=origin
+file:.git/config	branch.main.merge=refs/heads/main
