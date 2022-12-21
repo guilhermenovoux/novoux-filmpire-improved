@@ -17,9 +17,21 @@ export const {
   },
   theme : {
     colors: {
+      text: '#121212',
+      background: '#FFF',
       rocketseat: '#FF4500',
     }
   }
 })
+
+export const darkTheme = createTheme({
+  colors: {
+    text: '#FFF',
+    background: '#121212'
+
+  },
+});
+
+
 
 

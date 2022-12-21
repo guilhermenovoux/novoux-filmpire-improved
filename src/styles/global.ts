@@ -1,3 +1,4 @@
+import { color } from "@mui/system";
 import { globalCss } from ".";
 
 
@@ -9,6 +10,8 @@ export const gloabalStyles = globalCss({
 
   body: {
     '-webkit-font-smoothing': 'antialiased',
+    background: '$background',
+    color: '$text'
   },
 
   'body, input, textarea, button': {
@@ -17,3 +20,8 @@ export const gloabalStyles = globalCss({
   }
   
 })
+
+
+
+
+

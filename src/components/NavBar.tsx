@@ -2,11 +2,17 @@ import React from 'react'
 import { StyledAppBar, StyledAvatar, StyledButton, StyledIconButton, StyledLinkButton, StyledMenu, StyledToggleIconButton, StyledToolbar } from '../styles/components/NavBar'
 import { Menu, AccountCircle, Brightness4, Brightness7 } from '@mui/icons-material'
 import Link from 'next/link'
+import { darkTheme } from '../styles/global'
 
 import { useMediaQuery } from '@mui/material'
+import { theme } from '../styles'
+import { useTheme } from 'next-themes'
 
 
 export default function NavBar(){
+  const {theme, setTheme } = useTheme();
+  const toggleTheme = () =>
+    setTheme(theme === "light" ? "dark" : "light");
   const isMobile =  useMediaQuery('(max-width:600px')
   const isAuthenticated = true
   return(
@@ -22,9 +28,13 @@ export default function NavBar(){
             </StyledIconButton>
           )}
           <StyledToggleIconButton
-          onClick={() => {}}
+          onClick={toggleTheme}
           >
-            <Brightness7 />
+            
+            
+            {theme === 'dark' ? <Brightness7 /> : <Brightness4 /> }
+
+
           </StyledToggleIconButton>
           {!isMobile && 'Search...'}
           <div>
