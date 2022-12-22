@@ -17,6 +17,10 @@ export const gloabalStyles = globalCss({
   'body, input, textarea, button': {
     fontFamily: 'Montserrat',
     fontWeight: 400,
+  },
+  root: {
+    display: 'flex',
+    height: '100%'
   }
   
 })

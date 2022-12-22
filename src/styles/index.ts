@@ -11,17 +11,19 @@ export const {
   createTheme 
 } = createStitches({
   media: {
-    mobile: '(min-width: 200px)',
+    mobile: '(max-width: 767px)',
     tablet: '(min-width: 768px)',
     desktop: '(min-width: 1024px)',
   },
-  theme : {
+  theme: {
     colors: {
-      text: '#121212',
-      background: '#FFF',
-      rocketseat: '#FF4500',
+    text: '#121212',
+    background: '#FFF',
+    rocketseat: '#FF4500',
     }
   }
+  
+  
 })
 
 export const darkTheme = createTheme({
@@ -30,7 +32,9 @@ export const darkTheme = createTheme({
     background: '#121212'
 
   },
+  
 });
+
 
 
 

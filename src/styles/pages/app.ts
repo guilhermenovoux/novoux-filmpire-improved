@@ -1,18 +1,24 @@
 import { styled } from "..";
 
-export const Container = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'flex-start',
-  justifyContent: 'center',
-  minHeight: '100vh'
+export const ContentContainer = styled('div', {
+  flexGrow: 1,
+  padding: '2em',
+
+  '@mobile':{
+    marginLeft: '0px',
+
+  },
+  '@tablet': {
+    marginLeft: '240px',
+
+  }
+
 })
 
 
-export const Header = styled('header', {
-  width: '100%',
+export const StyledToolbarApp = styled('div', {
   
-  
+  height: '70px'
   
   
 })
